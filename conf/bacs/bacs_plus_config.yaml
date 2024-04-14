@@ -1,0 +1,7 @@
+defaults:
+  - dataset: voc
+  - network: deep_lab
+  - optimizer: nesterov
+  - scheduler: poly
+  - training: der_15_1
+  - loss: bacs_plus

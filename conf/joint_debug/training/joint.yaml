@@ -1,0 +1,12 @@
+# @package _group_
+name: joint
+batch_size: 2
+epochs: 1
+num_workers: 1
+val_every: 1
+seed: 2021
+scheduler_interval: step
+scheduler_frequency: 1
+debug: true
+# log_prototypes: true
+bg_detector: true

@@ -1,0 +1,15 @@
+# @package _group_
+_target_: loss.BACSLoss
+name: BACS Loss
+buffer_size: 300
+replay_minibatch_size: 12  
+dark_plus_plus: true
+beta: 0.5
+alpha: 0.8
+bg_weighted_ce: true
+same_task: false
+lkd: 0.25
+lkd_threshold: 0.5
+seen_threshold: 0.5
+seen_gamma: 2
+seen_ukd: true

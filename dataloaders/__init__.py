@@ -1,0 +1,3 @@
+from .cityscape_datamodule import CityscapeDataModule
+from .voc_datamodule import VocDataModule
+from .ade20k_datamodule import ADE20kDataModule

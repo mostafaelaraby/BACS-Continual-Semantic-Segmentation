@@ -1,0 +1,7 @@
+defaults:
+  - dataset: voc
+  - network: deep_lab
+  - optimizer: nesterov_sdr
+  - scheduler: poly
+  - training: sdr_15_1
+  - loss: sdr

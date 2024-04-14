@@ -1,0 +1,13 @@
+# @package _group_
+name: joint
+batch_size: 12
+epochs: 60
+num_workers: 12
+val_every: 10
+seed: 42
+scheduler_interval: step
+scheduler_frequency: 1
+mixed_precision: true
+accumulate_gradients: 1 
+
+ckpt_dir: checkpoints_back/

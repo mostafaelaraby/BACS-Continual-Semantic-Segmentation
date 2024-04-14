@@ -1,0 +1,27 @@
+# @package _group_
+name: continual
+batch_size: 12
+epochs: 30 # epochs per task
+num_workers: 12
+lr_next: 0.001 # lr for next tasks and initial lr is the lr in optimizer config
+val_every: 10
+seed: 42
+initial_increment: 15
+increment: 1
+scheduler_interval: step
+scheduler_frequency: 1
+mode: sequential # can be overlap disjoint sequential https://continuum.readthedocs.io/en/latest/_tutorials/scenarios/scenarios.html
+mixed_precision: true
+accumulate_gradients: 1
+n_gpus: 2
+
+# Transformer Learning Configs
+new_token_init: 'mean' # One of 'random', 'mean', or 'background'
+
+# Shuffle Classes
+shuffle_classes: False # Set to false for training on original 5 classes
+
+# apex: true
+ckpt_dir: der_transformer_ckpt
+learner:
+  _target_: learner.TransformerLearner

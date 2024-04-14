@@ -1,0 +1,15 @@
+defaults:
+  - dataset: ade
+  - network: deep_lab
+  - optimizer: nesterov
+  - scheduler: poly
+  - training: joint
+  - loss: crossentropy
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
+  sweep:
+    dir: .
+    subdir: .

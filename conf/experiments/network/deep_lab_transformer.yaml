@@ -1,0 +1,17 @@
+# @package _group_
+_target_: networks.TranSeg 
+progress: True
+aux: False
+norm: iabn_sync
+pretrained_backbone: True # backbone pretrained
+backbone_weights_path: ~/backbones/resnet101_iabn_sync.pth.tar
+
+transformer:
+  hidden_dim: 256
+  dim_feedforward: 2048
+  nhead: 8
+  num_decoder_layers: 2
+
+# Empty fields to be filled from dataset config.
+crop_size:
+num_classes:

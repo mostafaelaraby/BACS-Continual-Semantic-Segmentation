@@ -1,0 +1,7 @@
+# @package _group_
+_target_: torch.optim.lr_scheduler.CyclicLR
+base_lr: 1e-3
+max_lr: 1e-2
+step_size_up: 2000
+step_size_down: 2000
+mode: triangular

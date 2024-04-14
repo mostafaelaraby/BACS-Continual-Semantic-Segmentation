@@ -1,0 +1,6 @@
+# @package _group_
+_target_: torch.optim.sgd.SGD
+lr: 1e-2
+momentum: 9e-1
+nesterov: True
+weight_decay: 1e-4

@@ -1,0 +1,3 @@
+# @package _group_
+_target_: loss.CrossEntropy
+name: Cross Entropy

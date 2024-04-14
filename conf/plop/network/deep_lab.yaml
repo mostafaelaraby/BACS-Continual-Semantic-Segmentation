@@ -1,0 +1,7 @@
+# @package _group_
+_target_: networks.DeepLabV3 
+pretrained: False  # Pre-trained network on mscoco deeplabv3
+progress: True
+aux: False
+pretrained_backbone: True # backbone pretrained
+pretrained_base: imagenet # can be mscoco or imagenet

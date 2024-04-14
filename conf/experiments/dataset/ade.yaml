@@ -1,0 +1,6 @@
+# @package _group_
+_target_: dataloaders.ADE20kDataModule
+dataset:
+  root: ~/data/ade/
+  num_classes: 151
+  crop_size: 512

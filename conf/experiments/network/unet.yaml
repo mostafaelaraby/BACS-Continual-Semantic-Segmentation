@@ -1,0 +1,4 @@
+# @package _group_
+_target_: networks.UNet
+n_channels: 3
+bilinear: True

@@ -1,0 +1,6 @@
+# @package _group_
+_target_: dataloaders.VocDataModule
+dataset:
+  root: ~/data/voc/
+  num_classes: 21
+  crop_size: 32 # should be 512

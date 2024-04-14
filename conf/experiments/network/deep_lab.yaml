@@ -1,0 +1,9 @@
+# @package _group_
+_target_: networks.DeepLabV3 
+pretrained: True  # Pre-trained network on mscoco deeplabv3
+progress: True
+aux: False
+norm: iabn_sync
+pretrained_backbone: True # backbone pretrained
+pretrained_base: imagenet # can be mscoco or imagenet
+backbone_weights_path: ~/backbones/resnet101_iabn_sync.pth.tar

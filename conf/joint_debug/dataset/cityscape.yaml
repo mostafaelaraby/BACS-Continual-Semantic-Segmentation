@@ -1,0 +1,9 @@
+# @package _group_
+# get username and pwd from https://www.cityscapes-dataset.com/login/
+_target_: dataloaders.CityscapeDataModule
+dataset:
+  root: data/cityscape/
+  num_classes: 19
+  username: user
+  password: pwd
+  crop_size: 32

@@ -1,0 +1,20 @@
+# @package _group_
+name: continual
+batch_size: 12
+epochs: 30 # epochs per task
+num_workers: 4
+lr_next: 0.001 # lr for next tasks and initial lr is the lr in optimizer config
+val_every: 15
+seed: 7
+initial_increment: 15
+increment: 1
+scheduler_interval: step
+scheduler_frequency: 1
+mode: overlap # can be overlap disjoint sequential https://continuum.readthedocs.io/en/latest/_tutorials/scenarios/scenarios.html
+mixed_precision: true
+# apex gives best results
+apex: true
+# requires using multi-gpu for best results and then accumulate should be 1
+accumulate_gradients: 2
+learner:
+  _target_: learner.MultiHeadLearner

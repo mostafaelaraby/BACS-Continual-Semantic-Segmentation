@@ -1,0 +1,19 @@
+# @package _group_
+name: continual
+batch_size: 12
+epochs: 30 # epochs per task
+num_workers: 2
+lr_next: 0.001 # lr for next tasks and initial lr is the lr in optimizer config
+val_every: 2
+seed: 42
+initial_increment: 15
+increment: 1
+scheduler_interval: step
+scheduler_frequency: 1
+mode: disjoint # can be overlap disjoint sequential https://continuum.readthedocs.io/en/latest/_tutorials/scenarios/scenarios.html
+mixed_precision: true 
+accumulate_gradients: 1
+bg_detector: false
+ckpt_dir: checkpoints_back/
+learner:
+  _target_: learner.MultiHeadLearner

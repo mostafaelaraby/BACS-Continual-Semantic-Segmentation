@@ -1,0 +1,4 @@
+# @package _group_
+_target_: training.PolyLR
+# decay
+power: 0.9

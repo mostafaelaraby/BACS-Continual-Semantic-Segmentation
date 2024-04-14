@@ -1,0 +1,15 @@
+defaults:
+  - dataset: voc
+  - network: deep_lab
+  - optimizer: nesterov
+  - scheduler: poly
+  - training: continual
+  - loss: plop
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
+  sweep:
+    dir: .
+    subdir: .
